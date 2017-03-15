@@ -11,6 +11,8 @@ import UIKit
 class ImagePickerController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet var imageCollectionView: UICollectionView!
+    var chosenImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.imageCollectionView.collectionViewLayout = ImageFlowLayout.init()
@@ -24,9 +26,24 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
 
     func selectImage(_ image: UIImage) {
         //The image being selected is passed in as "image".
+        chosenImage = image
+        performSegue(withIdentifier: "imageToChoose", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "imageToChoose" {
+                if let dest = segue.destination as? ChooseFeedViewController {
+                    dest.chosenImage = chosenImage
+                }
+            }
+        }
+
+    }
     
+    @IBAction func unwindToImagePicker(segue:UIStoryboardSegue){
+        
+    }
     
     //DON'T MODIFY CODE HERE AND BELOW!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D014541E78A1E5002F5707 /* ChooseFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D014531E78A1E5002F5707 /* ChooseFeedViewController.swift */; };
+		11D014561E78A271002F5707 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D014551E78A271002F5707 /* FeedViewController.swift */; };
+		11D0145A1E78DF2D002F5707 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D014591E78DF2D002F5707 /* FeedViewCell.swift */; };
+		11D0145C1E78DF64002F5707 /* ChooseFeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D0145B1E78DF64002F5707 /* ChooseFeedViewCell.swift */; };
+		11F86E1E1E7916D500F9A7F8 /* OpenedImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F86E1D1E7916D500F9A7F8 /* OpenedImageController.swift */; };
 		417986C31E6631020050E1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417986C21E6631020050E1DF /* Assets.xcassets */; };
 		417986C51E6632C40050E1DF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417986C41E6632C40050E1DF /* TabBarController.swift */; };
 		417986C91E664AE40050E1DF /* imageCollectionVieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417986C81E664AE40050E1DF /* imageCollectionVieCell.swift */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D014531E78A1E5002F5707 /* ChooseFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFeedViewController.swift; sourceTree = "<group>"; };
+		11D014551E78A271002F5707 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		11D014591E78DF2D002F5707 /* FeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		11D0145B1E78DF64002F5707 /* ChooseFeedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseFeedViewCell.swift; sourceTree = "<group>"; };
+		11F86E1D1E7916D500F9A7F8 /* OpenedImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedImageController.swift; sourceTree = "<group>"; };
 		417986C21E6631020050E1DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		417986C41E6632C40050E1DF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		417986C81E664AE40050E1DF /* imageCollectionVieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageCollectionVieCell.swift; sourceTree = "<group>"; };
@@ -66,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				417986C81E664AE40050E1DF /* imageCollectionVieCell.swift */,
+				11D014591E78DF2D002F5707 /* FeedViewCell.swift */,
+				11D0145B1E78DF64002F5707 /* ChooseFeedViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -77,6 +89,9 @@
 				4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */,
 				417986CE1E6657650050E1DF /* Cells */,
 				4196F2E21E6514EE009916E4 /* ImagePickerController.swift */,
+				11D014531E78A1E5002F5707 /* ChooseFeedViewController.swift */,
+				11D014551E78A271002F5707 /* FeedViewController.swift */,
+				11F86E1D1E7916D500F9A7F8 /* OpenedImageController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -183,11 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F86E1E1E7916D500F9A7F8 /* OpenedImageController.swift in Sources */,
 				417986CB1E664CB60050E1DF /* ImageFlowLayout.swift in Sources */,
+				11D014561E78A271002F5707 /* FeedViewController.swift in Sources */,
+				11D0145A1E78DF2D002F5707 /* FeedViewCell.swift in Sources */,
 				4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */,
 				417986C51E6632C40050E1DF /* TabBarController.swift in Sources */,
 				417986C91E664AE40050E1DF /* imageCollectionVieCell.swift in Sources */,
 				4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */,
+				11D014541E78A1E5002F5707 /* ChooseFeedViewController.swift in Sources */,
+				11D0145C1E78DF64002F5707 /* ChooseFeedViewCell.swift in Sources */,
 				4196F2CB1E6509E8009916E4 /* AppDelegate.swift in Sources */,
 				4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */,
 			);
